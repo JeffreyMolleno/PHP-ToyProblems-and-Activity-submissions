@@ -13,11 +13,16 @@
     $boomportal->setDevelopers(array('Jaymard Menor','Jeffrey Molleno','Vanessa Dulva'));
 
 
+    echo 'Project Name: '.$boomportal->getProjectName().'<br>'; 
     echo 'Client: ' . $boomportal->isClient() . '<br>';
     echo 'Project Manager: ' . $boomportal->myProjectManager() . '<br>';
     echo 'Year Deployed: ' . $boomportal->YearDeployed() . '<br>';
-    echo 'Built Version: ' . $boomportal->BuiltVersion() . '<br>';
+    echo 'Built Version: ' . $boomportal->BuiltVersion() . '<br><br>';
     echo 'Technology Stack: <br>';
-        print_r($boomportal->TechnologyStack());
+        foreach($boomportal->TechnologyStack() as $tstack){
+            echo '&nbsp&nbsp&nbsp&nbsp'. $tstack. '<br>';
+        }
     echo '<br>Developers: <br>';
-        print_r($boomportal->Developers());
+        foreach($boomportal->Developers() as $devs){
+            echo '&nbsp&nbsp&nbsp&nbsp'.$devs. '<br>';
+        }    

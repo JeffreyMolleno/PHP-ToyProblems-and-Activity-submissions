@@ -5,12 +5,13 @@
 
     class BoomPortal implements IProject{
     
-        private $clientName, $projectManager, $yearDeployed, $built_version, $developers = array(), $t_stack = array();
-
-        
-        public function __construct(){
-
-        }
+        // initial value
+        private $clientName = "name undefined",
+                $projectManager = "name undefined",
+                $yearDeployed,
+                $built_version,
+                $developers = array('none'),
+                $t_stack = array('none');
 
         public function getProjectName(){
            return self::projectName; 
