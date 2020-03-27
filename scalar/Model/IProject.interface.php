@@ -4,11 +4,9 @@ interface IProject {
     const projectName = "Boom.Camp Portal V1.0.0";
     
     public function setClient(string $name);
-    // public function getClient() :? string;
-    public function isClient() :?string;
+    public function isClient() :? string;
 
     public function setProjectManager(string $name);
-    // public function getProjectManager() :? string;
     public function myProjectManager() :? string;
 
 

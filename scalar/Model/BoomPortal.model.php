@@ -25,7 +25,7 @@
             return $this->clientName;
         }
 
-        public function setProjectManager(string $name = 'name undefined'){
+        public function setProjectManager(string $name){
             $this->projectManager = $name;
         }
 
